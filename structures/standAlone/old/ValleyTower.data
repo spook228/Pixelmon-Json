@@ -1,0 +1,46 @@
+general {
+    S:name="valleytower"
+	B:complex=true
+}
+
+swaps {
+	S:1 = "regular:templeBlock"
+	S:3 = -2
+	S:25 = 155
+	S:67 = "regular:templeStairs"
+	S:108 = 67
+	S:112 = "regular:templeBrick"
+	S:114 = "regular:templeBrickStairs"
+	S:31 = "regular:fancyPillar"
+	S:19 = "regular:unownBlock2"
+}
+
+components {
+	S:"main:ValleyTower.schematic" <
+	"[grass]"
+	"[pillar]"
+	"[vines]"
+	>
+}
+
+specials {
+	S:"[grass]:fixGrass" = x
+	S:"[pillar]:createPillar"<
+	"scanID = regular:fancyPillar"
+	"scanMeta = 15"
+	"placeID = regular:fancyPillar"
+	"placeMeta = 0"
+	"stopat = <mat.ground,mat.grass,mat.rock,mat.sand>"
+	>
+	S:"[vines]:vines" <
+	"y = 64"
+	"Denominator = 64"
+	>
+	S:keepDistance <
+	"minDistance = 200"
+	"structures = <(valleyTower)>"
+	>
+	S:yrange = "min = 63"
+	S:flatAreaSchematicBottom = "maxYVariation = 5"
+
+}

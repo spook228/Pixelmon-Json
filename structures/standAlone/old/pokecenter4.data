@@ -1,0 +1,39 @@
+general {
+	S:biomes <
+	"Jungle"
+    "JungleHills"
+    "JungleEdge"
+    "Jungle M"
+    "JungleEdge M"
+	>
+	B:complex=true
+}
+
+swaps {
+	S:"minecraft:grass" = "util1"
+	S:"minecraft:dirt" = "util0"
+	S:"minecraft:tnt" = "pixelmon:PC_Block"
+	S:"minecraft:furnace" = "pixelmon:PokeHealer"
+	S:"minecraft:enchanting_table" = "pixelmon:Trading_Machine"
+}
+
+components {
+	S:"main:pokecenter4.schematic" <
+	"[vines]"
+	"[torchfix]"
+	"[grass]"
+	>
+}
+
+specials {
+	S:"[vines]:vines" <
+	"y = 64"
+	"Denominator = 15"
+	"atBlocks = <minecraft:cobblestone,minecraft:mossy_cobblestone>"
+	>
+	S:"[grass]:fixGrass" = x
+	S:"[torchfix]:postPlacement" = "Block=minecraft:torch"
+	S:surfacePoint="Surface = <10,6,17>"
+	
+	
+}

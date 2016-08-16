@@ -1,0 +1,12 @@
+general {
+	S:biomes <
+	"Savanna Plateau"
+	"Savanna M"
+	"Savanna Plateau M"
+	>
+	I:depth=2
+    B:hasPokemon=false
+}
+swaps {
+	S:"minecraft:diamond_block" = "pixelmon:Zapdos Shrine"
+}

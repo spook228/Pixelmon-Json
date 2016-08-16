@@ -1,0 +1,18 @@
+general {
+	S:biomes <
+    "Forest"
+    "Birch Forest"
+    "Roofed Forest"
+	>
+	I:depth=1
+}
+
+swaps {
+  S:"minecraft:diamond_block" = "pixelmon:Poke_Chest"
+}
+
+specials {
+  S:tileFilters<
+    "[pokechest]:pixelmon:item.Bug_Gem"
+  >
+}

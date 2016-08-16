@@ -1,0 +1,16 @@
+general {
+	S:biomes <
+    "Plains"
+	>
+	I:depth=1
+}
+
+swaps {
+  S:"minecraft:diamond_block" = "pixelmon:Poke_Chest"
+}
+
+specials {
+  S:tileFilters<
+    "[pokechest]:pixelmon:item.Psychic_Gem"
+  >
+}

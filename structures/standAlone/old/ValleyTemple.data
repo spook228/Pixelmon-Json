@@ -1,0 +1,33 @@
+general {
+    S:name="valleytemple"
+	B:complex=true
+}
+swaps {
+	S:1 = "regular:templeBlock"
+	S:3 = -2
+	S:25 = 155
+	S:67 = "regular:templeStairs"
+	S:112 = "regular:templeBrick"
+	S:114 = "regular:templeBrickStairs"
+	S:31 = "regular:fancyPillar"
+	S:19 = "regular:unownBlock2"
+}
+components {
+    S:"main:ValleyTemple.schematic" <
+	"[vines]"
+	"[grass]"
+	>
+	S:"include:ValleyTemplePump.schematic" = "<20,-3,20>"
+}
+specials {
+	S:"[vines]:vines" <
+	"y = 64"
+	"Denominator = 64"
+	>
+	S:"[grass]:fixGrass" = x
+	S:keepDistance <
+	"minDistance = 350"
+	"structures = <(valleyTemple)>"
+	>
+	S:yrange = "min = 63"
+}

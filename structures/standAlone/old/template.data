@@ -1,0 +1,40 @@
+general {
+    S:name="name"
+	S:biomes <
+	"various"
+	"biome names"
+	"this structure"
+	"will randomly"
+	"spawn in"
+	>
+	I:depth=0
+    B:hasPokemon=false
+	B:complex=false
+}
+
+##oldBlock is the block in the schematic file being replaced, newBlock is what replaces it.
+##to access a pixelmon Block, use "pixelmon:<name being used in registerBlock>"
+swaps {
+	S:"oldBlock" = "newBlock"
+}
+
+##Text in [brackets] is interpreted as a unique special generator ID defined in the 'specials' section of this structure data.
+components {
+    S:"main:SchematicFileNameInSameDirectory.schematic" <
+	"<xoffset,yoffset,zoffset>"
+	"[SpecialGenVariableName]"
+     >
+	S:"include:SchematicFileNameInSameDirectory.schematic" <
+	"<xoffset,yoffset,zoffset>"
+	"[SpecialGenVariableName]"
+     >
+}
+##Text in [brackets] defines a unique ID for the structure modifier. Only needed with modifiers that are being called for in the 'components' section.
+##Only Special Generators need to be assigned to specific component parts; Ground Helpers and Spawn Criteria will automatically be used.
+specials {
+	S:"[SpecialGenVariableName]:NameClassIsRegisteredWith" <
+	"AnyRequiredParameters"
+	"AnyOptionalParameters"
+	>
+	S:"[SpecialGenVariableName]:NameClassIsRegisteredWith"="Can be on the same line if only need 1 parameter"
+}

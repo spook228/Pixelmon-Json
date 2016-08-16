@@ -1,0 +1,101 @@
+{
+  "towns": [
+    {
+      "id": "towncenter1",
+      "filename": "pokecenter1.snapshot",
+      "weighting": 20,
+      "depth": 2,
+      "maxnum": 1,
+      "npcs": [
+        {
+          "type": "NurseJoy",
+          "x": 9,
+          "y": 3,
+          "z": 7
+        }
+      ]
+    },
+    {
+      "id": "townmart1",
+      "filename": "pokemart1.snapshot",
+      "weighting": 20,
+      "maxnum": 1,
+      "depth": 1,
+      "npcs": [
+        {
+          "type": "Shopkeeper",
+          "data": "Main",
+          "x": 10,
+          "y": 3,
+          "z": 5
+        },
+        {
+          "type": "Shopkeeper",
+          "data": "Secondary",
+          "x": 10,
+          "y": 3,
+          "z": 4
+        }
+      ]
+    }
+  ],
+  "gyms": [
+    {
+      "id": "grassgym",
+      "filename": "grassgym.snapshot",
+      "npcdata": "grassgym.json",
+      "depth": 8
+    }
+  ],
+  "standalone":[
+    {
+      "id": "center1",
+      "filename": "pokecenter1.snapshot",
+      "biomes": [ "Plains", "Forest", "Taiga", "Birch Forest", "Roofed Forest", "Mega Taiga", "Savanna" ],
+      "rarity": 20,
+      "depth": 2
+    },
+    {
+      "id": "center2",
+      "filename": "pokecenter2.snapshot",
+      "biomes": [ "Ice Plains", "Cold Taiga", "Ice Plains Spikes" ],
+      "rarity": 20,
+      "depth": 1
+    },
+    {
+      "id": "center3",
+      "filename": "pokecenter3.snapshot",
+      "biomes": [ "Forest", "Taiga", "Birch Forest", "Roofed Forest", "Mega Taiga" ],
+      "rarity": 20,
+      "depth": 1
+    },
+    {
+      "id": "iceshrine",
+      "filename": "shrine1.snapshot",
+      "biomes": [ "Ice Plains Spikes",	"Ice Plains",	"Ice Mountains",	"Cold Taiga M" ],
+      "rarity": 20,
+      "depth": 0
+    },
+    {
+      "id": "lightningshrine",
+      "filename": "shrine2.snapshot",
+      "biomes": [ "Savanna Plateau", "Savanna M",	"Savanna Plateau M" ],
+      "rarity": 20,
+      "depth": 0
+    },
+    {
+      "id": "fireshrine",
+      "filename": "shrine3.snapshot",
+      "biomes": [ "Mesa Plateau M", "Mesa Plateau F M", "Mesa Plateau F", "Mesa Plateau" ],
+      "rarity": 20,
+      "depth": 0
+    },
+    {
+      "id": "hauntedtower",
+      "filename": "hauntedtower.snapshot",
+      "biomes": [ "Forest", "Birch Forest", "Roofed Forest", "Swampland" ],
+      "rarity": 20,
+      "depth": 1
+    }
+  ]
+}

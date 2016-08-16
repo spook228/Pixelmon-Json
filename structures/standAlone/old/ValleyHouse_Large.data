@@ -1,0 +1,49 @@
+general {
+    S:name="valleyhouse_large"
+	I:depth=0
+	B:complex=true
+}
+swaps {
+	S:"1" = "regular:templeBlock"
+	S:"3" = "-2"
+	S:"67"  = "regular:templeStairs"
+	S:"112" = "regular:templeBrick"
+	S:"114" = "regular:templeBrickStairs"
+	S:"31" = "regular:fancyPillar"
+	S:"19" = "regular:unownBlock2"
+	S:"25" = "155"
+}
+
+components {
+    S:"main:ValleyHouse_Large.schematic" <
+	"[randCol]"
+	"[pillar]"
+	"[vines]"
+	"[grass]"
+     >
+}
+
+specials {
+	S:"[randCol]:randomMetaPerEach" <
+	"ID = 35"
+	"validMetas = <0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15>"
+	>
+	S:"[pillar]:createPillar"<
+	"scanID = regular:fancyPillar"
+	"scanMeta = 15"
+	"placeID = regular:fancyPillar"
+	"placeMeta = 0"
+	"stopat = <mat.ground,mat.grass,mat.rock,mat.sand>"
+	>
+	S:"[vines]:vines" <
+	"y = 64"
+	"Denominator = 55"
+	>
+	S:"[grass]:fixGrass" = x
+	S:flatAreaSchematicBottom = "maxYVariation = 5"
+	S:keepDistance <
+	"minDistance = 500"
+	"structures = <(valleyhouse_large)>"
+	>
+	S:yrange = "min = 63"
+}

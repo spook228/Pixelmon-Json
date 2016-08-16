@@ -1,0 +1,17 @@
+general {
+	S:biomes <
+    "Desert"
+    "DesertHills"
+	>
+	I:depth=0
+}
+
+swaps {
+  S:"minecraft:diamond_block" = "pixelmon:Poke_Chest"
+}
+
+specials {
+  S:tileFilters<
+    "[pokechest]:pixelmon:item.Ground_Gem"
+  >
+}

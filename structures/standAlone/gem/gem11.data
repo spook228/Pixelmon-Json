@@ -1,0 +1,17 @@
+general {
+	S:biomes <
+    "Ice Plains"
+    "Ice Mountains"
+	>
+	I:depth=0
+}
+
+swaps {
+  S:"minecraft:diamond_block" = "pixelmon:Poke_Chest"
+}
+
+specials {
+  S:tileFilters<
+    "[pokechest]:pixelmon:item.Ice_Gem"
+  >
+}

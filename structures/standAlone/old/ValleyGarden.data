@@ -1,0 +1,41 @@
+general {
+    S:name="valleygarden"
+	B:complex=true
+}
+
+swaps {
+	S:1 = "regular:templeBlock"
+	S:3 = -2
+	S:19 = "regular:unownBlock2"
+	S:25 = 155
+	S:30 = -1
+	S:31 = "regular:fancyPillar"
+	S:44 = "regular:slabsHalfStone1"
+	S:67 = "regular:templeStairs"
+	S:112 = "regular:templeBrick"
+	S:114 = "regular:templeBrickStairs"
+}
+
+components {
+	S:"main:ValleyGarden.schematic" <
+	"[grass]"
+	"[vines]"
+	>
+}
+specials {
+	
+	S:"[grass]:fixGrass" = x
+	S:"[vines]:vines" <
+	"y = 64"
+	"Denominator = 64"
+	>
+	S:keepDistance <
+	"minDistance = 300"
+	"structures = <(valleygarden)>"
+	>
+	S:yrange = "min = 63"
+	S:flatAreaSchematicBottom = "maxYVariation = 5"
+	S:importFilters <
+	wool2Apricorns
+	>
+}

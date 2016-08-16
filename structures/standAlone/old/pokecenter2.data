@@ -1,0 +1,14 @@
+general {
+	S:biomes <
+	"Ice Plains"
+    "Cold Taiga"
+    "Ice Plains Spikes"
+	>
+	I:depth=2
+}
+
+swaps {
+	S:"minecraft:tnt" = "pixelmon:PC Block"
+	S:"minecraft:furnace" = "pixelmon:PokeHealer"
+	S:"minecraft:enchanting_table" = "pixelmon:Trading Machine"
+}

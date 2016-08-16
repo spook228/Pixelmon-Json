@@ -1,0 +1,17 @@
+general {
+	S:biomes <
+    "Extreme Hills"
+    "Extreme Hills+"
+	>
+	I:depth=0
+}
+
+swaps {
+  S:"minecraft:diamond_block" = "pixelmon:Poke_Chest"
+}
+
+specials {
+  S:tileFilters<
+    "[pokechest]:pixelmon:item.Rock_Gem"
+  >
+}

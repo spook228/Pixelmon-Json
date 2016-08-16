@@ -1,0 +1,50 @@
+general {
+	I:depth=1
+}
+
+battle {
+    I:participants=2
+    I:pokemon=2
+    D:participantPos1 <
+    3.5
+    8.5
+    >
+    D:participantPos2 <
+    33.5
+    8.5
+    >
+    D:pokemonPos1 <
+    8.5
+    8.5
+    >
+    D:pokemonPos2 <
+    28.5
+    8.5
+    >
+}
+
+swaps {
+}
+
+camera {
+    S:player1<
+    "0:0:0"
+    "0:0:0"
+    "0:0:0"
+    >
+    S:player2<
+    "0:0:0"
+    "0:0:0"
+    "0:0:0"
+    >
+    S:pokemon1<
+    "0:0:0"
+    "0:0:0"
+    "0:0:0"
+    >
+    S:pokemon2<
+    "0:0:0"
+    "0:0:0"
+    "0:0:0"
+    >
+}

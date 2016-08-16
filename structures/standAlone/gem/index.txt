@@ -1,0 +1,17 @@
+gem1=bug   - Forest (not hills/taiga)
+gem2=dark   - Swamp
+gem3=dragon   - Extreme hills
+gem4=electric  - savanna
+gem5=fighting  - Mesa
+gem6=fire - Desert
+gem7=flying - Plateau
+gem8=ghost - Forest Hills
+gem9=grass - Plains
+gem10=ground - Desert
+gem11=ice - Ice plains/Hills
+gem12=normal - Plains
+gem13=poison - Jungle
+gem14=psychic - Plains
+gem15=rock - Extreme hills
+gem16=steel - Taiga
+gem17=water - Water

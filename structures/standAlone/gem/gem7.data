@@ -1,0 +1,18 @@
+general {
+	S:biomes <
+    "Savanna Plateau"
+    "Mesa Plateau F"
+    "Mesa Plateau"
+	>
+	I:depth=0
+}
+
+swaps {
+  S:"minecraft:diamond_block" = "pixelmon:Poke_Chest"
+}
+
+specials {
+  S:tileFilters<
+    "[pokechest]:pixelmon:item.Flying_Gem"
+  >
+}

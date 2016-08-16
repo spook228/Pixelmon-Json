@@ -1,0 +1,17 @@
+general {
+	S:biomes <
+    "Jungle"
+    "JungleHills"
+	>
+	I:depth=1
+}
+
+swaps {
+  S:"minecraft:diamond_block" = "pixelmon:Poke_Chest"
+}
+
+specials {
+  S:tileFilters<
+    "[pokechest]:pixelmon:item.Poison_Gem"
+  >
+}

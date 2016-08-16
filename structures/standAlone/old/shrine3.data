@@ -1,0 +1,13 @@
+general {
+	S:biomes <
+    "Mesa Plateau M"
+    "Mesa Plateau F M"
+    "Mesa Plateau F"
+    "Mesa Plateau"    
+	>
+	I:depth=2
+    B:hasPokemon=false
+}
+swaps {
+	S:"minecraft:diamond_block" = "pixelmon:Moltres Shrine"
+}

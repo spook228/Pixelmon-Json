@@ -1,0 +1,49 @@
+general {
+    S:name="valleyhouse_helical"
+	I:depth=0
+    B:hasPokemon=false
+	B:complex=true
+}
+swaps {
+	##1 = stone, 67 = cobble stairs, 112 = nether brick, 114 = nether stairs, 31 = tall grass (unused shrub), 44 = slab(s)
+	S:"1" = "regular:templeBlock"
+	S:"3" = "-2"
+	S:"19" = "regular:unownBlock2"
+	S:"31" = "regular:fancyPillar"
+	S:"35" = "159"
+	S:"44" = "regular:slabsHalfStone1"
+	S:"67" = "regular:templeStairs"
+	S:"112" = "regular:templeBrick"
+	S:"114" = "regular:templeBrickStairs"
+}
+components {
+    S:"main:ValleyHouse_Helical.schematic" <
+	"[pillar]"
+	"[grass]"
+	"[vines]"
+     >
+}
+specials {
+	S:"[pillar]:createPillar" <
+	"scanID = regular:templeBrick"
+	"scanMeta = 15"
+	"placeMeta = 12"
+	"placeID = regular:unownBlock2"
+	"firstID = regular:templeBrick"
+	"firstMeta = 0"
+	"stopat = <mat.ground,mat.grass,mat.rock,mat.sand>"
+	>
+	S:"[grass]:fixGrass" = x
+	S:"[vines]:vines" <
+	"y = 64"
+	"denominator = 35"
+	>
+	S:avoidWater <
+	"WaterPercentageLimit = 0"
+	"yOffset = 1"
+	>
+	S:surfacePoint = "surface = <8,1,9>"
+	S:flatAreaCriteria<
+	"maxYVariation = 5"
+	>
+}
