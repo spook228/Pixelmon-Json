@@ -1,0 +1,22 @@
+{
+  "npctype": "trainer",
+  "winnings": 32,
+
+  "skins": [
+    {
+      "filename": "shoplady4.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "TrainerBoy"
+    }
+  ],
+  "chat": [
+    {
+      "opening": "Vous me voyez avec les hautes herbes",
+      "win": "Je suis invincible dans mon habitat naturel",
+      "lose": "Hors de question !"
+    }
+  ]
+}
