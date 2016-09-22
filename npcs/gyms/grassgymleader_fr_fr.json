@@ -1,0 +1,22 @@
+{
+  "npctype": "trainer",
+  "winnings": 52,
+
+  "skins": [
+    {
+      "filename": "pokefan_m.png"
+    }
+  ],
+  "names": [
+    {
+      "name": "Rex"
+    }
+  ],
+  "chat": [
+    {
+      "opening": "Vous êtes arrivés.  Ne pensez pas que ce sera facile pour vous!",
+      "win": "Ha! Ne revenez pas.",
+      "lose": "Vous avez eu de la chance, l’ami!"
+    }
+  ]
+}
